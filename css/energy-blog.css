@@ -1,0 +1,263 @@
+html {
+  margin:0;
+  padding: 0;
+  font-family: Raleway;
+}
+body {
+  margin:0;
+  padding: 0;
+}
+
+.jumbotron {
+ min-height: 700px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  font-family: lato;
+}
+
+.overlay {
+ 
+  font-size:36px;
+  width: 100%;
+ height:700px;
+    top:0;
+    left:0;
+    z-index:1;
+     display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.top {
+  background-color:#3c3f42;
+  color:white;
+  height:80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+
+
+.header {
+  display: inline-block;
+  color:white;
+  text-align: center;
+}
+
+a {
+  color:white;
+}
+
+a:hover {
+  color: #43e084;  
+}
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+/* Blog Page */ 
+
+.article {
+  background-color:white;
+  width: 100%; 
+  height:3500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-container {
+  width: 60%;
+  height:3500px;
+  
+   }
+.article-header {
+  text-align: left;
+  font-size:64px;
+  
+}
+
+.article-subheader {
+  color: grey;
+  width: 100%;
+  font-size:20px;
+  line-height: 1.5;
+  margin-top:-30px;
+}
+.header-image {
+  margin:0;
+  width:800px;
+}
+.article-image {
+  width:550px;
+}
+.figure {
+  margin-right:20px;
+  padding: 0;
+  float:left;
+}
+
+.figure1 {
+  
+  margin-left:20px;
+  padding: 0;
+  float:right;
+}
+
+figcaption {
+  color:grey;
+  font-size: 14px;
+}
+
+.article-text {
+  width: 100%;
+  line-height: 2;
+  
+  
+}
+
+#menu{
+  border:solid;
+  border-radius: 5px;
+  width:150px;
+  height:50px;
+  background-color: #43e084;
+  margin-top:50px;
+  display: block;
+  color:white;
+   -webkit-transition: background-color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+}
+
+#menu:hover {
+    background-color:white;
+    color:#43e084;
+}
+
+#menu:focus {
+  outline: 0;
+}
+
+
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #3c3f42;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* The navigation menu links */
+.sidenav li {
+    padding-right:40px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+     -webkit-transition: background-color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav li:hover, .offcanvas li:focus{
+    color: #43e084;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 36px;
+    
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav li {font-size: 18px;}
+}
+
+@media only screen 
+and (min-width : 70px)
+and (max-width : 700px) {
+  .top {
+    height:150px;
+  }
+  .sidenav li {
+    font-size:28px;
+    text-align: center;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .article-container { 
+    width: 95%;
+    text-align: center;
+    }
+
+    .article-header {
+      font-size:50px;
+      text-align: center;
+    }
+
+    .header-image{
+    height: auto;
+  width: 100%;
+  }
+  .article-image {
+    height:auto;
+    width: 100%;
+  }
+
+}
+
+
